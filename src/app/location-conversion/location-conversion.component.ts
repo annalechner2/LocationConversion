@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GetLocationApiService } from '../get-location-api.service';
+import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'location-conversion',
@@ -7,7 +8,7 @@ import { GetLocationApiService } from '../get-location-api.service';
   styleUrls: ['./location-conversion.component.css']
 })
 export class LocationConversionComponent implements OnInit {
-
+  faQuestion = faQuestionCircle;
   Address1: string;
   Address2: string;
   City: string;
