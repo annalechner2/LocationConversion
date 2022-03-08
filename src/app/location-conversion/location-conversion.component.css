@@ -7,6 +7,7 @@
     background: #f1f1f1;
     color: #848484;
     font-family: sans-serif;
+    padding: 25px;
 }
 
 .form-style {
@@ -93,7 +94,16 @@ font-family sans-serif
     color:  #7ec6ee;
 }
 
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 990px) { 
+  .row {
+    flex-direction: column;
+  }
 
+  .col-1 {
+    align-self: center;
+  }
+ }
 
 /*
 background #f1f1f1
