@@ -1,0 +1,126 @@
+<div class="main-container">
+
+<form class="form-style">
+
+    <div class="alert alert-success" *ngIf="isShown" role="alert">
+        {{message}}
+      </div>
+
+    <div class="addressMain">
+    <div class="row">
+        <h3>Enter your address</h3>
+    </div>
+
+<div class="row">
+    <div class="col-1">
+        <div class="square-logo">
+        </div>
+    </div>
+
+    <form>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <label for="inputAddress">Address 1</label>
+            <input type="text"  [(ngModel)]="Address1" [ngModelOptions]="{standalone: true}"  class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group col-md-12">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text"  [(ngModel)]="Address2" [ngModelOptions]="{standalone: true}"  class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+    </div>
+
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity4">City</label>
+          <input type="city"  [(ngModel)]="City" [ngModelOptions]="{standalone: true}"  class="form-control" id="inputCity4" placeholder="City">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputState4">State</label>
+          <input type="state" [(ngModel)]="State" [ngModelOptions]="{standalone: true}"  class="form-control" id="inputState4" placeholder="State">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputZip4">Zip</label>
+          <input type="zip" [(ngModel)]="Zip" [ngModelOptions]="{standalone: true}"  class="form-control" id="inputZip4" placeholder="Zip">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputCountry4">Country</label>
+          <input type="country" [(ngModel)]="Country" [ngModelOptions]="{standalone: true}"  class="form-control" id="inputCountry4" placeholder="Country">
+        </div>
+      </div>
+
+
+
+</form>
+
+</div>
+
+
+    <div class="row row-end">
+        <div class="column">
+            <input type="checkbox" [(ngModel)]="termsAccepted" (click)="checkforvalidation()" [ngModelOptions]="{standalone: true}"/>
+            I acknowledge that I have read and accept the <a target="_blank" href="" class="atag-color">Terms of Use Agreement</a> 
+            and consent to the <a target="_blank" href="" class="atag-color">Privacy Policy </a> and  
+            <a target="_blank" href="" class="atag-color">Video Privacy Policy</a> .
+        </div>
+    
+        <div class="column">
+        <button class="btn btn-color"  [disabled]= "!termsAccepted" (click)="RunLatLong()">Get Lat/Long</button>
+        </div>
+    </div>
+  
+
+</div>
+
+
+
+<div class="coordinatesMain">
+    <div class="row">
+        <h3>OR Enter Latitude/Longitude</h3>
+    </div>
+
+<div class="row">
+    <div class="col-1">
+        <div class="square-logo">
+        </div>
+    </div>
+
+
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <label for="firstNumber">Longitude:</label>
+            <input [(ngModel)]="Longitude" [ngModelOptions]="{standalone: true}" id="firstNumber" type="text" class="form-control">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <label for="secondNumber">Latitude:</label>
+            <input [(ngModel)]="Latitude" [ngModelOptions]="{standalone: true}" id="secondNumber" type="text" class="form-control">
+        </div>
+    </div>
+</form>
+
+</div>
+
+<br/>
+
+<div class="row row-end">
+    <div class="column">
+        <input type="checkbox" [(ngModel)]="termsAcceptedTwo" (click)="checkforvalidationTwo()" [ngModelOptions]="{standalone: true}"/>
+        I acknowledge that I have read and accept the <a target="_blank" href="" class="atag-color">Terms of Use Agreement</a> 
+        and consent to the <a target="_blank" href="" class="atag-color">Privacy Policy </a> and  
+        <a target="_blank" href="" class="atag-color">Video Privacy Policy</a> .
+    </div>
+
+    <div class="column">
+    <button class="btn btn-color"  [disabled]= "!termsAcceptedTwo" (click)="RunAddress()">GetAddress</button>
+    </div>
+</div>
+</div>
+    </form>
+
+</div>

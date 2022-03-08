@@ -1,0 +1,104 @@
+.main-container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    vertical-align:middle;
+    background: #f1f1f1;
+    color: #848484;
+    font-family: sans-serif;
+}
+
+.form-style {
+    margin: auto;
+}
+
+.square-logo{
+    width: 200px;
+    height: 200px;
+    background-color: #b5b5b5;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    padding: 10px;
+  }
+
+  .row-end{
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: white;
+  }
+
+  .btn-color{
+      background-color: #7ec6ee;
+  }
+  .atag-color{
+      color:  #7ec6ee;
+  }
+
+
+
+/*
+background #f1f1f1
+logo background #b5b5b5
+text color #848484
+hyperlinkbutton #7ec6ee
+font-family sans-serif
+*/.main-container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  vertical-align:middle;
+  background: #f1f1f1;
+  color: #848484;
+  font-family: sans-serif;
+}
+
+.form-style {
+  margin: auto;
+}
+
+.square-logo{
+  width: 200px;
+  height: 200px;
+  background-color: #b5b5b5;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  /*flex: 33.33%;*/
+  padding: 10px;
+}
+
+.row-end{
+  display: flex;
+  width: auto;
+  height: auto;
+  background-color: white;
+}
+
+.btn-color{
+    background-color: #7ec6ee;
+}
+.atag-color{
+    color:  #7ec6ee;
+}
+
+
+
+/*
+background #f1f1f1
+logo background #b5b5b5
+text color #848484
+hyperlinkbutton #7ec6ee
+font-family sans-serif
+*/
